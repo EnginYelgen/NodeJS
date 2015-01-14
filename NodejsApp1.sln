@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsApp_Chating", "NodejsApp1\NodejsApp_Chating.njsproj", "{F20B7B91-603F-4D6E-9B33-63D6DDD931B1}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsApp_SQLConnection", "NodejsApp_SQLConnection\NodejsApp_SQLConnection.njsproj", "{86974E1F-FDA9-4DEE-A9F4-D37554E91E27}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "WebApplication", "WebApplication\WebApplication.njsproj", "{E6C5E7E7-CED1-49A2-AF5C-26463EE64EF3}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ChatRoom", "ChatRoom\ChatRoom.njsproj", "{C33DE264-5D86-4FA7-A6DA-B5CEF4962A31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F20B7B91-603F-4D6E-9B33-63D6DDD931B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20B7B91-603F-4D6E-9B33-63D6DDD931B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20B7B91-603F-4D6E-9B33-63D6DDD931B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20B7B91-603F-4D6E-9B33-63D6DDD931B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86974E1F-FDA9-4DEE-A9F4-D37554E91E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86974E1F-FDA9-4DEE-A9F4-D37554E91E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86974E1F-FDA9-4DEE-A9F4-D37554E91E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86974E1F-FDA9-4DEE-A9F4-D37554E91E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C5E7E7-CED1-49A2-AF5C-26463EE64EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C5E7E7-CED1-49A2-AF5C-26463EE64EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C5E7E7-CED1-49A2-AF5C-26463EE64EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C5E7E7-CED1-49A2-AF5C-26463EE64EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C33DE264-5D86-4FA7-A6DA-B5CEF4962A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C33DE264-5D86-4FA7-A6DA-B5CEF4962A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C33DE264-5D86-4FA7-A6DA-B5CEF4962A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C33DE264-5D86-4FA7-A6DA-B5CEF4962A31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

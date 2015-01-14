@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>NodejsApp_SQLConnection</Name>
+    <RootNamespace>NodejsApp_SQLConnection</RootNamespace>
+    <DebuggerPort>
+    </DebuggerPort>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>86974e1f-fda9-4dee-a9f4-d37554e91e27</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="node_modules\mssql\index.js" />
+    <Compile Include="node_modules\mssql\lib\datatypes.js" />
+    <Compile Include="node_modules\mssql\lib\isolationlevel.js" />
+    <Compile Include="node_modules\mssql\lib\main.js" />
+    <Compile Include="node_modules\mssql\lib\msnodesql.js" />
+    <Compile Include="node_modules\mssql\lib\table.js" />
+    <Compile Include="node_modules\mssql\lib\tds-fix.js" />
+    <Compile Include="node_modules\mssql\lib\tds.js" />
+    <Compile Include="node_modules\mssql\lib\tedious-fix.js" />
+    <Compile Include="node_modules\mssql\lib\tedious.js" />
+    <Compile Include="node_modules\mssql\lib\udt.js" />
+    <Compile Include="node_modules\mssql\node_modules\generic-pool\lib\generic-pool.js" />
+    <Compile Include="node_modules\mssql\node_modules\generic-pool\test\generic-pool.test.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\all-headers.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\buffertools.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\bulk-load.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\collation.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\connection.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\data-type.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\debug.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\errors.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\guid-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\instance-lookup.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\library.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\login7-payload.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\message-io.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\metadata-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\ntlm-payload.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\packet.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\prelogin-payload.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\request.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\rpcrequest-payload.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\special-stored-procedure.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\sqlbatch-payload.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\tds-versions.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\tedious.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\colmetadata-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\done-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\env-change-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\infoerror-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\loginack-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\nbcrow-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\order-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\returnstatus-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\returnvalue-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\row-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\sspi-token-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\token-stream-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\token\token.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\tracking-buffer\bigint.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\tracking-buffer\readable-tracking-buffer.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\tracking-buffer\tracking-buffer.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\tracking-buffer\writable-tracking-buffer.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\transaction.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\lib\value-parser.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\index.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\lib\bignumber.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\test\test.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\dbcs-codec.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\dbcs-data.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\index.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\internal.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\sbcs-codec.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\sbcs-data-generated.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\sbcs-data.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\lib\extend-node.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\lib\index.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\lib\streams.js" />
+    <Compile Include="node_modules\mssql\node_modules\tedious\node_modules\sprintf\lib\sprintf.js" />
+    <Compile Include="node_modules\mssql\nofix.js" />
+    <Compile Include="server.js" />
+    <Content Include="index.html" />
+    <Content Include="node_modules\mssql\.coffeemaker" />
+    <Content Include="node_modules\mssql\.npmignore" />
+    <Content Include="node_modules\mssql\.travis.yml" />
+    <Content Include="node_modules\mssql\CHANGELOG.txt" />
+    <Content Include="node_modules\mssql\node_modules\generic-pool\.npmignore" />
+    <Content Include="node_modules\mssql\node_modules\generic-pool\.travis.yml" />
+    <Content Include="node_modules\mssql\node_modules\generic-pool\fabfile.py" />
+    <Content Include="node_modules\mssql\node_modules\generic-pool\Makefile" />
+    <Content Include="node_modules\mssql\node_modules\generic-pool\package.json" />
+    <Content Include="node_modules\mssql\node_modules\generic-pool\README.md" />
+    <Content Include="node_modules\mssql\node_modules\tedious\LICENSE" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\.travis.yml" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\LICENSE" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\package.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\README.md" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\.npmignore" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\.travis.yml" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\Changelog.md" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\big5-added.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\cp936.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\cp949.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\cp950.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\eucjp.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\gb18030-ranges.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\gbk-added.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\shiftjis.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\LICENSE" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\package.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\README.md" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\README.md~" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\sprintf\package.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\node_modules\sprintf\README.md" />
+    <Content Include="node_modules\mssql\node_modules\tedious\package.json" />
+    <Content Include="node_modules\mssql\node_modules\tedious\README.md" />
+    <Content Include="node_modules\mssql\package.json" />
+    <Content Include="node_modules\mssql\README.md" />
+    <Content Include="node_modules\mssql\src\datatypes.coffee" />
+    <Content Include="node_modules\mssql\src\isolationlevel.coffee" />
+    <Content Include="node_modules\mssql\src\main.coffee" />
+    <Content Include="node_modules\mssql\src\msnodesql.coffee" />
+    <Content Include="node_modules\mssql\src\table.coffee" />
+    <Content Include="node_modules\mssql\src\tds-fix.coffee" />
+    <Content Include="node_modules\mssql\src\tds.coffee" />
+    <Content Include="node_modules\mssql\src\tedious.coffee" />
+    <Content Include="node_modules\mssql\src\udt.coffee" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="node_modules\" />
+    <Folder Include="node_modules\mssql\" />
+    <Folder Include="node_modules\mssql\lib\" />
+    <Folder Include="node_modules\mssql\node_modules\" />
+    <Folder Include="node_modules\mssql\node_modules\generic-pool\" />
+    <Folder Include="node_modules\mssql\node_modules\generic-pool\lib\" />
+    <Folder Include="node_modules\mssql\node_modules\generic-pool\test\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\lib\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\lib\token\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\lib\tracking-buffer\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\lib\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\big-number\test\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\encodings\tables\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\iconv-lite\lib\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\sprintf\" />
+    <Folder Include="node_modules\mssql\node_modules\tedious\node_modules\sprintf\lib\" />
+    <Folder Include="node_modules\mssql\src\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

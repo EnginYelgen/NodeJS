@@ -1,0 +1,10 @@
+{
+  "name": "WebApplication",
+  "version": "0.0.0",
+  "description": "WebApplication",
+  "main": "server.js",
+  "author": {
+    "name": "engin",
+    "email": ""
+  }
+}

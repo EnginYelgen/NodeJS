@@ -1,0 +1,10 @@
+{
+  "name": "NodejsApp_SQLConnection",
+  "version": "0.0.0",
+  "description": "NodejsApp_SQLConnection",
+  "main": "server.js",
+  "author": {
+    "name": "engin",
+    "email": ""
+  }
+}

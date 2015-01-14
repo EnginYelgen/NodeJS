@@ -1,0 +1,10 @@
+{
+  "name": "ChatRoom",
+  "version": "0.0.0",
+  "description": "ChatRoom",
+  "main": "server.js",
+  "author": {
+    "name": "engin",
+    "email": ""
+  }
+}
